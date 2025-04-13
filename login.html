@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      
+        #form_background{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("https://cdn.pixabay.com/photo/2015/12/04/09/13/leaves-1076307_640.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+            
+        }
+        #form{
+            height: 220px;
+            width: 270px;
+            background-color:white;
+            filter: opacity(70%);
+            box-shadow: 3px 3px 10px;
+            border-radius: 10%;
+            
+        }
+        fieldset{
+            height: 140px;
+            padding: 10px 30px;
+            font-size: 20px;
+            margin: 10px ;
+
+        }
+        #btn{
+            background-color:#3355ff;
+            color: white;
+            width: 170px;
+            height: 25px;
+            margin: 5px 0px;
+        }
+        .option{
+            margin:  0px 15px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="form_background">
+        <form id="form"action="">
+            <fieldset>
+             <legend>login info</legend>
+            <div>
+                <label for="email">Enter email</label><br>
+                <input type="email" id="email"><br>
+             </div>
+             <div>
+                <label for="passward"> Enter passward</label><br>
+                <input type="password" id="passward">
+            </div>
+            <input  id="btn"type="submit" value="login">
+        </fieldset> 
+        <div>
+            <a class="option" href="#">forget passward</a>
+            <a class="option" href="#">Create account</a>
+        </div>
+        </form>
+    </div>
+    
+</body>
+</html>

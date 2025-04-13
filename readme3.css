@@ -1,0 +1,196 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#screen {
+    background-image: url("https://cdn.pixabay.com/photo/2022/05/24/11/43/home-office-7218315_960_720.png");
+}
+
+/*header  start here */
+#header {
+    background-color: rgb(250, 237, 205);
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    column-gap: 5vw;
+    font-size: 30px;
+}
+
+#heading {
+    font-size: 60px;
+    padding: 0px 50px;
+    color: #d4a373;
+    border-radius: 0px 0px 40px 0px;
+    box-shadow: 2px 3px 3px;
+}
+
+a {
+    text-decoration: none;
+    color: #a06a34;
+
+}
+
+#inputfield {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    height: 30px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.icon-img {
+    height: 30px;
+    margin-left: 10px;
+}
+
+/*header end here*/
+#main {
+
+    display: flex;
+}
+
+/*sidebar start */
+.sidebar {
+
+    background-color: rgb(250, 237, 205);
+    height: 90vh;
+    width: 20vw;
+    overflow-y: scroll;
+}
+
+.option {
+    text-align: center;
+    height: 30px;
+
+    border: 1px solid black;
+}
+.option:hover{
+    background-color: #ffbb77;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*sidebar end*/
+
+#footer {
+    background-color: #d4a373;
+    height: 15vh;
+    margin: 5px 0px;
+    display: flex;
+}
+
+h4 {
+    text-transform: capitalize;
+}
+
+#footer>:first-child {
+    width: 60vw;
+
+    padding: 10px;
+
+}
+
+#footer>:last-child {
+    padding: 10px;
+
+}
+
+h3 {
+    background-color: #d4a373;
+    height: 30px;
+    padding: 3px;
+    text-transform: capitalize;
+}
+
+
+/*book shelf started */
+.row {
+    height: 350px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 5px;
+
+}
+
+.content {
+
+    width: 80vw;
+    height: 90vh;
+    overflow-y: scroll;
+
+}
+
+.items {
+    background-color: rgb(250, 237, 205);
+
+    padding: 2px;
+    margin: 0px 5px;
+    width: 180px;
+    height: 333px;
+
+
+
+}
+
+.item_image {
+    width: 180px;
+    height: 200px;
+}
+
+.item_info {
+
+    height: 100px;
+    width: 180px;
+
+}
+
+.btn_segment {
+
+    display: flex;
+}
+
+.btn {
+    height: 30px;
+    width: 90px;
+}
+
+.items>:last-child>:first-child {
+    background-color: rgb(73, 245, 81);
+}
+
+.items>:last-child>:last-child {
+    background-color: rgb(59, 232, 245);
+}
+
+/*book shelf ended*/
+/*Animation */
+.items:hover{
+    animation-name: changeitems;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes changeitems{
+    from{
+        background-color: rgb(250, 237, 205);
+
+        padding: 2px;
+        margin: 0px 5px;
+        width: 180px;
+        height: 333px;  
+    }to{
+        background-color: #ffbb77;
+        padding: 2px;
+        margin: 0px 5px;
+        width: 180px;
+        height: 333px; 
+        
+    }
+}
